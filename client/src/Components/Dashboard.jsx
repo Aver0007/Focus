@@ -73,8 +73,8 @@ function Dashboard() {
             <nav>
               <ul>
                 <li className="mb-4">
-                  <a href="#" className="block p-2 bg-gray-700 rounded hover:bg-gray-600">
-                    Dashboard
+                  <a href="/study-graph" className="block p-2 bg-gray-700 rounded hover:bg-gray-600">
+                    Study-Graph
                   </a>
                 </li>
                 <li className="mb-4">

@@ -66,6 +66,7 @@ import PublicTimerApp from './Components/PublicTimerApp';
 import Login from './Components/Login';
 import Register from './Components/Register';
 import Dashboard from './Components/Dashboard';
+import GraphPage from './Components/GraphPage';
 
 function App() {
   const isAuthenticated = !!localStorage.getItem('token'); // Check if user is authenticated
@@ -97,6 +98,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/study-tracker" element={<TimerApp/>} />
         <Route path="/" element={<Navigate to="/login" />} />
+        <Route path="/study-graph" element={<GraphPage />} />
         </Routes>
       </div>
     </Router>
