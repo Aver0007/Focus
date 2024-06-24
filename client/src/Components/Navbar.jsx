@@ -1,33 +1,16 @@
-// import React from 'react'
-
-// function Navbar() {
-//   return (
-//     <div className='bg-zinc-900 flex'>
-//         <div className='logo text-white flex justify-start px-2 mx-10'>Focus</div>
-//         <div className='all justify-end'>
-//         {["About us", "Services", "Your Profile"].map((item, index)=>
-//         (
-//             <div key={index} className='items text-white flex justify-between'>{item}</div>
-//         )
-//         )}
-//         </div>
-        
-//     </div>
-//   )
-// }
-
-// export default Navbar
-
 import React from 'react'
 
 function Navbar() {
   return (
-    <div className='bg-zinc-900 flex justify-between items-center px-10'>
-      <div className='logo text-white text-4xl'>Focus</div>
-      <div className='flex space-x-6'>
-        {["About us", "Services", "Your Profile"].map((item, index) => (
-          <div key={index} className='text-white'>{item}</div>
-        ))}
+    <div className=' z-[999] w-full py-10 px-20 font-mono flex justify-between items-center'>
+      <div className='logo text-5xl '>
+       Study Tracker
+      </div>
+      <div id='links' className='links flex gap-10'>
+       <a href='#about' className='text-lg capitalize font-semibold'>About us</a>
+       <a href='#landing' className='text-lg capitalize font-semibold'>Start Session</a>
+       <a href='#motivation' className='text-lg capitalize font-semibold'>Motivation 101</a>
+
       </div>
     </div>
   )
