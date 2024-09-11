@@ -47,7 +47,7 @@ function PublicTimer() {
       if (!isPausedRef.current && secondsLeftRef.current > 0) {
         tick();
       }
-    }, 100);
+    }, 1000);
   }
 
   function initTimer() {
