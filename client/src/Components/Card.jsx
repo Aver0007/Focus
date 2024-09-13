@@ -14,7 +14,7 @@ function Card() {
             <div className='card w-full h-full rounded-xl overflow-hidden'>
               <img
                 className='w-full h-full object-cover'
-                src='https://picsum.photos/id/237/200/300'
+                src='./moo1.jpg'
                 alt='motivation'
               />
             </div>
@@ -24,7 +24,7 @@ function Card() {
             <div className='card w-full h-full rounded-xl overflow-hidden'>
               <img
                 className='w-full h-full object-cover'
-                src='https://picsum.photos/id/237/200/300'
+                src='moo2.jpg'
                 alt='motivation'
               />
             </div>

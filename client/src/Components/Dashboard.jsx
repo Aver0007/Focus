@@ -63,11 +63,11 @@ function Dashboard() {
         <aside className="w-64 bg-gray-800 text-white p-4 flex flex-col justify-between shadow-lg">
           <div>
             <div className="profile text-center mb-8">
-              <img
+              {/* <img
                 src="https://via.placeholder.com/100"
                 alt="Profile"
                 className="rounded-full mx-auto mb-2"
-              />
+              /> */}
               <h2 className="text-xl font-semibold">{userName}</h2>
             </div>
             <nav>
@@ -82,11 +82,11 @@ function Dashboard() {
                     Study Tracker
                   </a>
                 </li>
-                <li className="mb-4">
+                {/* <li className="mb-4">
                   <a href="#" className="block p-2 bg-gray-700 rounded hover:bg-gray-600">
                     Profile
                   </a>
-                </li>
+                </li> */}
               </ul>
             </nav>
           </div>
