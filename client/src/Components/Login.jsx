@@ -23,6 +23,10 @@ function Login() {
     navigate('/register');
   };
 
+  const navigateToMain = () => {
+    navigate('/');
+  }
+
   return (
     <div className='bg-teal-900 w-full h-screen flex justify-center items-center'>
       <div className='form-container bg-white p-8 rounded-lg shadow-lg w-96'>
@@ -66,6 +70,11 @@ function Login() {
             >
               Register
             </button>
+            <button type='button' className='w-full bg-gray-300 text-gray-800 py-2 px-4 rounded-md ml-2 hover:bg-gray-400 focus:outline-none'
+            onClick={navigateToMain}
+            >
+            Home
+            </button> 
           </div>
         </form>
       </div>
