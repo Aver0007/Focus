@@ -22,7 +22,8 @@ function Dashboard() {
           },
         };
 
-        const response = await axios.get('http://localhost:5000/user', config);
+        // const response = await axios.get('http://localhost:5000/user', config);
+        const response = await axios.get('https://focus-hb01.onrender.com/user', config);
         setUserName(response.data.username);
         fetchStudySessions(token); // Fetch study sessions after fetching user data
       } catch (error) {
@@ -42,7 +43,8 @@ function Dashboard() {
         },
       };
 
-      const response = await axios.get('http://localhost:5000/studySessions', config);
+      // const response = await axios.get('http://localhost:5000/studySessions', config);
+      const response = await axios.get('https://focus-hb01.onrender.com/studySessions', config);
       setStudySessions(response.data);
     } catch (error) {
       console.error('Fetch study sessions error:', error.response?.data?.message);

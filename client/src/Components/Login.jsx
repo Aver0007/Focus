@@ -10,7 +10,8 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/login', { username, password });
+      // const response = await axios.post('http://localhost:5000/login', { username, password });
+      const response = await axios.post('https://focus-hb01.onrender.com/login', { username, password });
       localStorage.setItem('token', response.data.token);
       navigate('/dashboard');
     } catch (error) {
