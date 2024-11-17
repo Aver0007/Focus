@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Dashboard() {
   const [userName, setUserName] = useState('');
@@ -75,14 +76,20 @@ function Dashboard() {
             <nav>
               <ul>
                 <li className="mb-4">
-                  <a href="/study-graph" className="block p-2 bg-gray-700 rounded hover:bg-gray-600">
+                  {/* <a href="/study-graph" className="block p-2 bg-gray-700 rounded hover:bg-gray-600">
                     Study-Graph
-                  </a>
+                  </a> */}
+                  <Link to="/study-graph" className="block p-2 bg-gray-700 rounded hover:bg-gray-600">
+                  Study-Graph
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="/study-tracker" className="block p-2 bg-gray-700 rounded hover:bg-gray-600">
+                  {/* <a href="/study-tracker" className="block p-2 bg-gray-700 rounded hover:bg-gray-600">
                     Study Tracker
-                  </a>
+                  </a> */}
+                  <Link to="/study-tracker" className="block p-2 bg-gray-700 rounded hover:bg-gray-600">
+                   Study Tracker
+                  </Link>
                 </li>
                 {/* <li className="mb-4">
                   <a href="#" className="block p-2 bg-gray-700 rounded hover:bg-gray-600">
@@ -90,7 +97,7 @@ function Dashboard() {
                   </a>
                 </li> */}
               </ul>
-            </nav>
+            </nav> 
           </div>
           <div>
             <button
