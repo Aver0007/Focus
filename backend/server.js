@@ -18,13 +18,30 @@ app.use(cors());
 app.use(express.json());
 
 // PostgreSQL configuration
+// const pool = new Pool({
+//   user: process.env.DB_USER,
+//   host: process.env.DB_HOST,
+//   database: process.env.DB_DATABASE,
+//   password: process.env.DB_PASSWORD,
+//   port: process.env.DB_PORT,
+// });
+
+// const { Pool } = require('pg');
+// import dotenv from 'dotenv';
+// dotenv.config();
+
 const pool = new Pool({
-  user: process.env.DB_USER,
-  host: process.env.DB_HOST,
-  database: process.env.DB_DATABASE,
-  password: process.env.DB_PASSWORD,
-  port: process.env.DB_PORT,
+  user: process.env.DB_USER, // username from Render DB connection string
+  host: process.env.DB_HOST, // host from Render DB connection string
+  database: process.env.DB_DATABASE, // database name from Render DB
+  password: process.env.DB_PASSWORD, // password from Render DB
+  port: process.env.DB_PORT, // usually 5432
+  ssl: {
+    rejectUnauthorized: false, // SSL configuration for Render
+  },
 });
+
+
 
 // Routes
 // Login route
